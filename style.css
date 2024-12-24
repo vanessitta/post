@@ -1,15 +1,20 @@
 body {
     background-color: black;
+    margin: 0;
+    padding: 0;
   }
   h1 {
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
   }
   
   .poster {
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 100px;
+    width: 90%;
+    margin-left: 30%;
+    margin: 20px auto;
     color: white;
     font-family: "Libre Baskerville", serif;
     text-align: center;
@@ -18,5 +23,26 @@ body {
   .motivation-img {
     border: 5px solid white;
     width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 20px auto;
   }
-  
+  @media (max-width: 768px){
+    h1{
+        font-size: 1.5rem;
+    }
+    .poster{
+        font-size: 1rem;
+    }
+  }
+  @media (max-width: 480px){
+    h1{
+        font-size: 1.2rem;
+    }
+    .poster{
+        font-size: 0.9rem;
+    }
+    .motivation-img{
+        width: 90%;
+    }
+}
